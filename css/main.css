@@ -1,0 +1,273 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root{
+    --main-bg-color: #FFD500;
+    --main-text-color: #B1BFCD;
+    --main-input-bg-color: #F5F8F9;
+    --main-oval-bg-color: #C7C7C7;
+    --main-font-weight: 400;
+}
+
+@font-face {
+    font-family: "Actor";
+    font-weight: 400;
+    src: url("../fonts/actor-v17-latin-regular.woff2") format("woff2"),
+         url("../fonts/actor-v17-latin-regular.woff") format("woff"); 
+}
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+body{
+    margin: 0;
+    font-family: "Actor";
+    background-color: #F2F2F2;;
+}
+
+.form-wrap{
+    width: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-right: 110px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.set-up{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 340px;
+    padding: 320px 64px 80px 64px;
+    background-color: var(--main-bg-color);
+    background-image: url("../images/girl.png");
+    background-repeat: no-repeat;
+    background-position: calc(50%) calc(50% - 100px);
+    border-radius: 30px 0px 0px 30px;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: var(--main-font-weight);
+    margin: 0;
+}
+
+.set-up-text-wrap{
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.set-up-text{
+    margin: 0;
+}
+
+.form-end-wrap{
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.input-wrapper{
+    width: 400px;
+}
+
+.input-label{
+    width: 440px;
+    color: #373D40;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.form-input{
+    width: 320px;
+    padding: 13px 15px;
+    background-color: var(--main-input-bg-color);
+    color:#373D40;
+    border: none;
+    border-radius: 4px;
+    caret-color: blue;
+    outline-color: #CAD7DD;
+}
+
+
+.form-input::-webkit-input-placeholder{
+    color: var(--main-text-color);
+    font-size: 13px;
+}
+
+
+.form-input::-moz-placeholder{
+    color: var(--main-text-color);
+    font-size: 13px;
+}
+
+
+.form-input:-ms-input-placeholder{
+    color: var(--main-text-color);
+    font-size: 13px;
+}
+
+
+.form-input::-ms-input-placeholder{
+    color: var(--main-text-color);
+    font-size: 13px;
+}
+
+
+.form-input::placeholder{
+    color: var(--main-text-color);
+    font-size: 13px;
+}
+
+.gender-label{
+    width: 320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.male{
+    width: 50px;
+    height: 50px;
+    margin-left: 65px;
+    display: block;
+    background-image: url("../images/male.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    background-color:#F5F8F9;
+    border-radius: 50%;
+}
+
+.female{
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/femalesvg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    display: block;
+    background-color:#F5F8F9;
+    border-radius: 50%;
+}
+
+.gender-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.gender-text{
+    color: var(--main-text-color);
+    margin-left: 10px;
+}
+
+.radio-input:checked ~ .male{
+ background-color: var(--main-bg-color);
+}
+
+.radio-input:checked ~ .female{
+  background-color: var(--main-bg-color);
+}
+
+.membership{
+    width: 440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.membership-icon{
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/Group.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 15px;
+    background-color: #C7C7C7;
+    border-radius: 50%;
+}
+
+.classic{
+    margin-left: 30px;
+}
+
+.form-link-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+.form-link{
+    width: 150px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 15px 10px;
+    background-color: var(--main-input-bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.save{
+    background-color:#60E6C5;
+    color: #fff;
+}
